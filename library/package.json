@@ -1,0 +1,21 @@
+{
+  "name": "bubblesort-lib",
+  "version": "1.0.0",
+  "description": "bubblesort library",
+  "main": "index.ts",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "alessia amitrano",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.0.2"
+  },
+  "devDependencies": {
+    "nyc": "^13.3.0"
+  }
+}
