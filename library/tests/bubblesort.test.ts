@@ -22,9 +22,14 @@ describe('BubbleSort TDD', function () {
         expect(bubbleSort.startingArray.length).to.equal(3);
     })
     it('the third element must have been swapped with the second', function() {
-        expect(bubbleSort.startingArray[1]).to.equal(5);
+        expect(bubbleSort.startingArray[2]).to.equal(20);
     })
     it('the first element must be smaller than the new element in second position', function() {
+        console.log(bubbleSort.startingArray);
         expect(bubbleSort.startingArray[0]).to.be.lessThan(bubbleSort.startingArray[1]);
+    })
+    it('If the new element added is 17, it should be placed in third position', function() {
+        bubbleSort.sort(17, bubbleSort.startingArray);
+        expect(bubbleSort.startingArray[2]).to.equal(17);
     })
 });
