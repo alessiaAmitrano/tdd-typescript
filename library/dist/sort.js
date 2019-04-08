@@ -1,1 +1,3 @@
-import * as BubbleSort from '../src/index'
+import * as Bubble from '../src/index';
+
+exports.BubbleSort = Bubble;

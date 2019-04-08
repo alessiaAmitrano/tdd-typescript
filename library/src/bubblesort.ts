@@ -1,4 +1,4 @@
-export class BubbleSort {
+export default class BubbleSort {
     startingArray: number[] = [];
 
     sort(value: number): number[] {
