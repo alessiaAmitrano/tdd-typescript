@@ -1,10 +1,10 @@
 export class BubbleSort {
     startingArray: number[] = [];
 
-    sort(value: number, array: number[]): number[] {
-        let tempArray = array;
-        array.push(value);
-        if (array.length >= 2) {
+    sort(value: number): number[] {
+        let tempArray = this.startingArray;
+        tempArray.push(value);
+        if (tempArray.length >= 2) {
             for (var i = 0; i < tempArray.length - 1; i++) {
                 let swapped = false;
                 for (var n = 0; n < tempArray.length - i - 1; n++) {
@@ -21,6 +21,7 @@ export class BubbleSort {
         } else {
             console.log('the array contains only one element')
         }
+        this.startingArray = tempArray;
         return tempArray;
     }
 }
