@@ -2,10 +2,9 @@ export class BubbleSort {
 startingArray: number[] = [];
 
 sort( value: number, array: number[]): number[] {
-    let tempArray = []
+    let tempArray = array;
     array.push(value);
     if( array.length >= 2 ) {
-        tempArray = array;
         for (var n = 0; n < tempArray.length - 1; n++)
         if(tempArray[n] > tempArray[n+1] ) {
             let tempVal = tempArray[n+1];
