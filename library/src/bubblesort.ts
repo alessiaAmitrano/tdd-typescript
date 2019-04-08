@@ -6,13 +6,15 @@ sort( value: number, array: number[]): number[] {
     array.push(value);
     if( array.length >= 2 ) {
         tempArray = array;
-        if(tempArray[0] > tempArray[1] ) {
-            let tempVal = tempArray[1];
-            tempArray[1] = tempArray[0];
-            tempArray[0] = tempVal;
+        for (var n = 0; n < tempArray.length - 1; n++)
+        if(tempArray[n] > tempArray[n+1] ) {
+            let tempVal = tempArray[n+1];
+            tempArray[n+1] = tempArray[n];
+            tempArray[n] = tempVal;
         }
+    } else {
+        console.log('the array contains only one element')
     }
-
     return tempArray;
 }
 }
